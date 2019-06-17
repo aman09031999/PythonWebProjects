@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container">
+
+            <h1><center>RESULT PAGE</center></h1>
+                    <center>
+                            Result : {{result}}
+                    </center>
+
+            <hr>
+
+            <div class="row">
+
+                <div class="col">
+                    <center>
+                            <form action="logout">
+                                    <button input = "button" value="submit">LOGOUT</button>
+                            </form>
+                    </center>
+                        
+                </div>
+                <div class="col">
+                    <center>
+                            <form action="home">
+                                    <button input = "button" value="submit">Previous</button>
+                            </form>
+                    </center>
+                    
+                        
+                </div>
+
+            </div>
+    </div>
+
+{% endblock %}

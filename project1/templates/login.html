@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+
+        <center>
+                    <br><br>
+                    <h1>LOGIN FORM</h1>
+                    <hr>
+                    <form method = "POST" action="login">
+
+                        {% csrf_token %}
+
+                        Enter UserName <input type="text" name="user"><br><br>
+                        Enter Password <input type="password" name="pass"><br><br>
+
+                        <button input = "button" value = "submit">LOGIN</button>
+
+                    </form>
+
+        </center>
+
+    </div>
+{% endblock %}
